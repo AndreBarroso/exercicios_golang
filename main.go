@@ -1,16 +1,17 @@
 package main
 
 import (
-	
-	"modulo/oparacoesAritimeticas"
-	"fmt"
-	
 
+	"modulo/operacoesAritimeticas"
 )
 
 func main() {
-	a := oparacoesAritimeticas.Soma(5,2) 
-	fmt.Println(a)
+	a:=1
+	b:=2
+	a, b = operacoesAritimeticas.Inverte(a, b)
+
+	println(a)
+	println(b)
 
 	
 }
