@@ -1,17 +1,12 @@
 package main
 
 import (
-
-	"modulo/operacoesAritimeticas"
+	
+	slicesforfunctions "modulo/slicesForFunctions"
 )
 
 func main() {
-	a:=1
-	b:=2
-	a, b = operacoesAritimeticas.Inverte(a, b)
-
-	println(a)
-	println(b)
-
-	
+	// slicesforfunctions.ImprimeValoresSlice()
+	slice:= slicesforfunctions.CriaSlice()
+	slicesforfunctions.DivideIndices(slice)
 }
