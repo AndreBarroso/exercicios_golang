@@ -1,12 +1,24 @@
 package main
 
 import (
-	
-	slicesforfunctions "modulo/slicesForFunctions"
+	"fmt"
+	"modulo/strutsHerancaFuncoes"
 )
 
 func main() {
-	// slicesforfunctions.ImprimeValoresSlice()
-	slice:= slicesforfunctions.CriaSlice()
-	slicesforfunctions.DivideIndices(slice)
+	estudantes := strutsHerancaFuncoes.CriaEstudante()
+
+	strutsHerancaFuncoes.Ordena(estudantes)
+
+	// aprovados, _, _ := strutsHerancaFuncoes.SituacaoAlunos(estudantes)
+
+	// for _, aprovado := range aprovados {
+	// 	fmt.Println(aprovado)
+	// }
+
+	as := strutsHerancaFuncoes.EliminaReprovados(estudantes)
+
+	for _, a := range as {
+		fmt.Println(a)
+	}
 }
